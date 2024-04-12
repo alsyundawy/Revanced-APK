@@ -43,25 +43,22 @@ build-mode = "apk"
 uptodown-dlurl = "https://youtube.en.uptodown.com/android"
 
 [Music-Extended]
+enabled = true
 app-name = "Music"
 patches-source = "YT-Advanced/ReX-patches"
 integrations-source = "YT-Advanced/ReX-integrations"
 cli-source = "revanced/revanced-cli"
 rv-brand = "Music ReVanced Extended"
 build-mode = "apk"
-excluded-patches = "custom-branding-icon-revancify-blue"
-included-patches = "custom-branding-icon-mmt"
-apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube-music/"
-apkmirror-arch = "both"                                                  # both arm64-v8a and arm-v7a
+uptodown-dlurl = "https://youtube.en.uptodown.com/android"                                              # both arm64-v8a and arm-v7a
 
 [YouTube-Extended]
+enabled = true
 build-mode = "both"
 patches-source = "YT-Advanced/ReX-patches"
 integrations-source = "YT-Advanced/ReX-integrations"
 cli-source = "revanced/revanced-cli"
 rv-brand = "Youtube ReVanced Advanced"
 build-mode = "apk"
-excluded-patches = "custom-branding-icon-revancify-blue"
-included-patches = "custom-branding-icon-mmt"
-apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube/"
+uptodown-dlurl = "https://youtube.en.uptodown.com/android"
 
