@@ -34,7 +34,6 @@ jobs:
       - name: Generate release
         run: |
           version=${{ steps.version.outputs.versionr }}
-          echo -e "\nUse [MicroG](https://github.com/ReVanced/GmsCore/releases/latest) for YouTube and Music" >> release_notes.md
           echo -e "# ReVanced Patches\n" > release_notes.md
           dateRevanced=$(date -u -d $(gh release view --json publishedAt -q .publishedAt --repo revanced/revanced-patches))
           echo -e "\n Published on $dateRevanced\n" >> release_notes.md
@@ -45,6 +44,11 @@ jobs:
           echo -e "\n Published on $dateReX\n" >> release_notes.md
           gh release view --json body -q .body --repo anddea/revanced-patches >> release_notes.md
           echo -e "\n---\n" >> release_notes.md
+          dateReX=$(date -u -d $(gh release view --json publishedAt -q .publishedAt --repo YT-Advanced/ReX-patches))
+          echo -e "\n Published on $dateReX\n" >> release_notes.md
+          gh release view --json body -q .body --repo YT-Advanced/ReX-patches >> release_notes.md
+          echo -e "\n---\n" >> release_notes.md
+          echo -e "\nUse [MicroG](https://github.com/ReVanced/GmsCore/releases/latest) for YouTube and Music" >> release_notes.md
           sed -i "1s/^/Release $version\n\n/" release_notes.md
           gh release create "$version" --draft -t "$version" -F release_notes.md
         env:
@@ -56,8 +60,8 @@ jobs:
       fail-fast: false
       matrix:
         include:
-          - id: "YouTube-anddea"
-          - id: "Music-anddea"
+          - id: "YouTube-Anddea"
+          - id: "Music-Anddea"
           - id: "YouTube"
           - id: "Music"
           - id: "Music-Extended"
@@ -138,8 +142,11 @@ jobs:
           /tmp/extras.sh "revanced/revanced-integrations" "revanced/revanced-patches" "revanced/revanced-cli" > $filename
           echo -e "\n\n" >> $filename
           /tmp/extras.sh "anddea/revanced-integrations" "anddea/revanced-patches" "revanced/revanced-cli" >> $filename
+          echo -e "\n\n" >> $filename
+          /tmp/extras.sh "YT-Advanced/ReX-integrations" "YT-Advanced/ReX-patches" "revanced/revanced-cli" >> $filename
+          echo -e "\n\n" >> $filename          
           git add $filename
-          git commit -m "Bump version ${{ needs.generate-release.outputs.version }}"
+          git commit -m "Bump version"
           git push
 
   release:
@@ -168,7 +175,7 @@ jobs:
       - name: Setup Python
         uses: actions/setup-python@v4
         with:
-          python-version: '3.10' # The python version to use.
+          python-version: '3.11' # The python version to use.
           cache: 'pip'
           cache-dependency-path: 'telegram-script/requirements.txt'
         
