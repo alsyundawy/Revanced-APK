@@ -16,9 +16,12 @@
 
 ## Stargazers over time
 [![Stargazers over time](https://starchart.cc/alsyundawy/Revanced-APK.svg?variant=adaptive)](https://starchart.cc/alsyundawy/Revanced-APK)
-Extensive ReVanced builder  
 
-Get the [latest CI release](https://github.com/revanced-apks/build-apps)(https://github.com/alsyundawy/Revanced-APK/releases).
+
+
+# Extensive ReVanced builder  
+
+Get the [latest CI release](https://github.com/alsyundawy/Revanced-APK/releases).
 
 Install [Microg](https://github.com/ReVanced/GmsCore/releases) for non-root YouTube and YT Music APKs
 
