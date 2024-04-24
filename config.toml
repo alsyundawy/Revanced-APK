@@ -21,24 +21,24 @@ uptodown-dlurl = "https://youtube-music.en.uptodown.com/android"
 arch = "both"
 
 
-[Music-anddea]
+[Music-Anddea]
 enabled = true
 app-name = "Music"
 version = "latest"
 patches-source = "anddea/revanced-patches"
 integrations-source = "anddea/revanced-integrations"
-rv-brand = "anddea"
+rv-brand = "Anddea"
 build-mode = "apk"
 uptodown-dlurl = "https://youtube-music.en.uptodown.com/android"
 arch = "both"
 
-[YouTube-anddea]
+[YouTube-Anddea]
 enabled = true
 app-name = "YouTube"
 version = "auto"
 patches-source = "anddea/revanced-patches"
 integrations-source = "anddea/revanced-integrations"
-rv-brand = "anddea"
+rv-brand = "Anddea"
 build-mode = "apk"
 uptodown-dlurl = "https://youtube.en.uptodown.com/android"
 
