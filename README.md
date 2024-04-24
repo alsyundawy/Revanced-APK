@@ -14,11 +14,6 @@
 [![Build Modules](https://github.com/alsyundawy/Revanced-APK/actions/workflows/build.yml/badge.svg)](https://github.com/alsyundawy/Revanced-APK/actions/workflows/build.yml)
 [![CI](https://github.com/alsyundawy/Revanced-APK/actions/workflows/ci.yml/badge.svg?event=schedule)](https://github.com/alsyundawy/Revanced-APK/actions/workflows/ci.yml)
 
-## Stargazers over time
-[![Stargazers over time](https://starchart.cc/alsyundawy/Revanced-APK.svg?variant=adaptive)](https://starchart.cc/alsyundawy/Revanced-APK)
-
-
-
 # Extensive ReVanced builder  
 
 Get the [latest CI release](https://github.com/alsyundawy/Revanced-APK/releases).
