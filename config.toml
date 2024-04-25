@@ -45,6 +45,7 @@ uptodown-dlurl = "https://youtube.en.uptodown.com/android"
 [Music-Extended]
 enabled = true
 app-name = "Music"
+version = "auto"
 patches-source = "YT-Advanced/ReX-patches"
 integrations-source = "YT-Advanced/ReX-integrations"
 cli-source = "revanced/revanced-cli"
@@ -55,6 +56,7 @@ uptodown-dlurl = "https://youtube-music.en.uptodown.com/android"                
 [YouTube-Extended]
 enabled = true
 build-mode = "both"
+version = "auto"
 patches-source = "YT-Advanced/ReX-patches"
 integrations-source = "YT-Advanced/ReX-integrations"
 cli-source = "revanced/revanced-cli"
@@ -189,26 +191,6 @@ enabled = true
 version = "auto"
 uptodown-dlurl = "https://infinity-for-reddit.en.uptodown.com/android"
 
-[Music-anddea]
-enabled = true
-app-name = "Music"
-version = "latest"
-patches-source = "anddea/revanced-patches"
-integrations-source = "anddea/revanced-integrations"
-rv-brand = "anddea"
-build-mode = "apk"
-uptodown-dlurl = "https://youtube-music.en.uptodown.com/android"
-arch = "both"
-
-[YouTube-anddea]
-enabled = true
-app-name = "YouTube"
-version = "auto"
-patches-source = "anddea/revanced-patches"
-integrations-source = "anddea/revanced-integrations"
-rv-brand = "anddea"
-build-mode = "apk"
-uptodown-dlurl = "https://youtube.en.uptodown.com/android"
 
 [VSCO]
 enabled = true
