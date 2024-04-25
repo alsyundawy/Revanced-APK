@@ -35,7 +35,7 @@ arch = "both"
 [YouTube-Anddea]
 enabled = true
 app-name = "YouTube"
-version = "auto"
+version = "19.16.38"
 patches-source = "anddea/revanced-patches"
 integrations-source = "anddea/revanced-integrations"
 rv-brand = "Anddea"
@@ -56,7 +56,7 @@ uptodown-dlurl = "https://youtube-music.en.uptodown.com/android"                
 [YouTube-Extended]
 enabled = true
 build-mode = "both"
-version = "auto"
+version = "19.05.36"
 patches-source = "YT-Advanced/ReX-patches"
 integrations-source = "YT-Advanced/ReX-integrations"
 cli-source = "revanced/revanced-cli"
